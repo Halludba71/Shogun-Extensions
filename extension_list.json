@@ -1,0 +1,9 @@
+{
+   "extensions":{
+        "manganato":{
+            "logo" :"https://raw.githubusercontent.com/Halludba71/Shogan-Extensions/main/manganato/logo.png",
+            "source" : "https://raw.githubusercontent.com/Halludba71/Shogan-Extensions/main/manganato/manganato.py"
+        }
+   }
+}
+
