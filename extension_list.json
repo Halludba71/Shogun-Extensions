@@ -7,4 +7,19 @@
         "version": "0.0.1"
     }
 
+    {
+        "Name": "Mangasee",
+        "logo": "https://mangasee123.com/media/navbar.brand.png"
+    }
+
+    {
+        "Name": "Mangafreak",
+        "logo": "https://pbs.twimg.com/profile_images/1174583351635628032/7JHOJADN_400x400.jpg"
+    }
+
+    {
+        "Name": "MangaDex",
+        "logo": "https://torrentfreak.com/images/mangadex.png"
+    }
+
 ]
