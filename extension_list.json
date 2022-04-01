@@ -3,6 +3,7 @@
         "Name": "Manganato",
         "logo" :"https://raw.githubusercontent.com/Halludba71/Shogan-Extensions/main/manganato/logo.png",
         "source" : "https://raw.githubusercontent.com/Halludba71/Shogan-Extensions/main/manganato/source.py",
+        "url" : "https://manganato.com/",
         "version": "0.0.1"
     }
 ]
