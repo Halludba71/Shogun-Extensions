@@ -2,7 +2,6 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import os
-import base64
 from main.models import chapter, download, extension
 from main.Backend.IfOnline import connected
 extensionId = extension.objects.get(name="Manganato").id
@@ -131,8 +130,8 @@ def DownloadChapter(urls, comicid, chapterId, downloadId):
         os.makedirs(path)
 
     for index,url in enumerate(urls):
-        response = requests.get(url, headers=headers)
-        if response.ok:
+        try:
+            response = requests.get(url, headers=headers)
             file_name = f"{path}/{index+1}.{url[len(url)-3::]}"
             print(file_name)
             if download.objects.all().filter(id=downloadId).exists() == False:
@@ -143,7 +142,7 @@ def DownloadChapter(urls, comicid, chapterId, downloadId):
 
             chapterToDownload.downloaded += 1
             chapterToDownload.save()
-        else:
+        except:
             download.objects.get(id=downloadId).delete()
             return True
 
